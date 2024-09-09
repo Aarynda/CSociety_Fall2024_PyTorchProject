@@ -13,11 +13,11 @@ class NeuralNetwork(nn.Module):
         self.linear_relu_stack = nn.Sequential(
             nn.Linear(28*28, 676),
             nn.ReLU(),
-            nn.Linear(676, 576),
+            nn.Linear(676, 676),
             nn.ReLU(),
-            nn.Linear(576, 512),
+            nn.Linear(676, 512),
             nn.ReLU(),
-            nn.Linear(512,512),
+            nn.Linear(512, 512),
             nn.ReLU(),
             nn.Linear(512, 10)
         )
